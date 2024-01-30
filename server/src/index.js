@@ -9,7 +9,9 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-mongoose.connect("mongodb+srv://san:1234@cluster0.qdroxu7.mongodb.net/recipes");
+mongoose.connect(
+  "mongodb+srv://*********@cluster0.qdroxu7.mongodb.net/recipes"
+);
 
 app.listen(3001, () => {
   console.log("Server Started");
